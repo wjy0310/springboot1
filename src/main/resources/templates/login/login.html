@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>登录</title>
+<link href="${basePath}/css/style.css" rel='stylesheet' type='text/css' />
+<script type="text/javascript" src="${basePath}/js/jquery-3.1.1.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="application/x-javascript">
+	
+	 addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } 
+	 
+
+</script>
+
+<!--//webfonts-->
+</head>
+<body>
+	<h1>测试系统</h1>
+	<div class="app-location">
+		<!-- <h2>Welcome to Locaticus</h2> -->
+		<div class="line">
+			<span></span>
+		</div>
+		<div class="location">
+			<img src="${basePath}/images/location.png" class="img-responsive"
+				alt="" />
+		</div>
+		<form action="${basePath}/login/login" method="post">
+			<input name="userName" type="text" class="text" value="帐号"
+				onfocus="this.value = '';"
+				onblur="if (this.value == '') {this.value = '帐号';}"> <input
+				name="password" type="password" onfocus="this.value = '';">
+			<#if message?? && message != "" ><div><span font="red">${message}</span></div></#if>
+			<div class="submit">
+				<input type="submit" value="登录">
+			</div>
+			<div class="clear"></div>
+			<div class="new">
+				<h3>
+					<a href="#">忘记密码 ?</a>
+				</h3>
+				<h4>
+					<a href="#">注册</a>
+				</h4>
+				<div class="clear"></div>
+			</div>
+		</form>
+	</div>
+	<!--start-copyright-->
+	<div class="copy-right">
+		<p>
+			Copyright &copy; 2017.wangerYouxi.<!-- <a target="_blank" href="">&#x7F51;&#x9875;&#x6A21;&#x677F;</a> -->
+		</p>
+	</div>
+	<!--//end-copyright-->
+</body>
+</html>
